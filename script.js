@@ -1,7 +1,7 @@
 // const btn = document.querySelector('#btn');
 // btn.addEventListener('click', function(){
 //     const val = document.querySelector('#val').value;
-//     return loadJson(`https://api.github.com/users/${val}`)
+//    loadJson(`https://api.github.com/users/${val}`)
 //         .then(msg => {
 //             (msg.message === 'Not Found')
 //             ? console.log('Not Found a User Of This Name')
