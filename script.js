@@ -17,12 +17,11 @@
 const Success = (obj) => {
     let resault = '';
     for (const key in obj) {
-        resault += `${key} : ${obj[key]} <br>`;
+        resault = `${key} : ${obj[key]} <br>`;
+        const li = document.createElement("LI");
+        li.innerHTML = resault;
+        document.querySelector('#listik').appendChild(li);
     }
-
-    const li = document.createElement("LI");
-    li.innerHTML = resault; 
-    document.querySelector('#listik').appendChild(li);
 }
 
 
