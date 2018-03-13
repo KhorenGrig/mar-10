@@ -28,24 +28,24 @@ const Success = (obj) => {
 
                 // Or
 
-const btn = document.querySelector('#btn');
-const getValue = () => {
-    const val = document.querySelector('#val').value;
-    document.querySelector('#val').value = '';
-    return `${getUserData(val)}`;
-}
+// const btn = document.querySelector('#btn');
+// const getValue = () => {
+//     const val = document.querySelector('#val').value;
+//     document.querySelector('#val').value = '';
+//     return `${getUserData(val)}`;
+// }
 
-const getUserData = async (name) => {
-    try {
-        let response = await fetch(`https://api.github.com/users/${name}`);
-        let json = await response.json();
-        (json.message === 'Not Found') 
-            ?alert('You enter a Not Valid name')
-            : Success(json);
-    } catch (error) {
-        console.log(`Something Wrong`);
-    }
-};
+// const getUserData = async (name) => {
+//     try {
+//         let response = await fetch(`https://api.github.com/users/${name}`);
+//         let json = await response.json();
+//         (json.message === 'Not Found') 
+//             ?alert('You enter a Not Valid name')
+//             : Success(json);
+//     } catch (error) {
+//         console.log(`Something Wrong`);
+//     }
+// };
 
-btn.addEventListener('click', getValue);
+// btn.addEventListener('click', getValue);
 
